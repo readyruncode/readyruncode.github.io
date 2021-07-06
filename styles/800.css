@@ -1,0 +1,76 @@
+
+.section > hr {
+    width: 20%;
+}
+
+/******************************************************************************/
+/** PORTFOLIO SECTION                                                         */
+/******************************************************************************/
+
+.tab-container > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tab-container > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolio-item img {
+    max-width: 60%;
+}
+
+.tab-panel > .portfolio-item:first-child img {
+    max-height: 65%;
+}
+
+/******************************************************************************/
+/** ABOUT ME SECTION                                                          */
+/******************************************************************************/
+
+.me > .container {
+    max-width: 85%;
+}
+
+.me > .container .profile-pic {
+    width: 130px;
+}
+
+/******************************************************************************/
+/** BLOG SECTION                                                              */
+/******************************************************************************/
+
+.blog > .container .item {
+    max-width: 85%;
+}
+
+.blog > .container .item .img-box {
+    min-width: 150px;
+    height: 150px;
+}
+
+.blog > .container .item:first-child .text-box .latest-post {
+    font-size: 12px;
+}
+
+.blog > .container .item .text-box h3 {
+    font-size: 20px;
+}
+
+.blog > .container .item .text-box p {
+    font-size: 12px;
+}
+
+.blog > .container .item .text-box p:nth-child(4) {
+    margin-top: 10px;
+}
+
+/******************************************************************************/
+/** CONTACT SECTION                                                           */
+/******************************************************************************/
+
+/******************************************************************************/
+/** FOOTER                                                                    */
+/******************************************************************************/
+
+footer > .container p {
+    font-size: 10px !important;
+}

@@ -1,0 +1,218 @@
+
+/******************************************************************************/
+/** BLOG SECTION                                                              */
+/******************************************************************************/
+
+.blog {
+    background-color: #403E3C;
+}
+
+.blog > .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog > .container .item {
+    max-width: 50%;
+}
+
+.blog > .container .item .flex-box {
+    display: flex;
+}
+
+.blog > .container .item .img-box {
+    min-width: 200px;
+    height: 200px;
+}
+
+.blog > .container .item .img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+.blog > .container .item .text-box {
+    
+}
+
+.blog > .container .item .text-box h3 {
+    color: #F8EEE9;
+    text-transform: uppercase;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.blog > .container .item .text-box p {
+    color: #F8EEE9;
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.blog > .container .item .text-box .latest-post {
+    display: none;
+}
+
+.blog > .container .item:first-child .text-box .latest-post {
+    display: revert;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.blog > .container .item .text-box p:nth-child(4) {
+    margin-top: 15px;
+    font-size: var(--main-font-size);
+    font-weight: var(--main-font-weight);
+}
+
+.blog > .more {
+    text-align: center;
+}
+
+.blog > .more a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #B7A69B;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/******************************************************************************/
+/** BLOG POST PAGE                                                            */
+/******************************************************************************/
+
+.blog-content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+    font-size: var(--main-font-size);
+}
+
+.blog-content h1 {
+    text-transform: uppercase;
+}
+
+.blog-content h2 {
+    margin-top: 30px;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.blog-content h3 {
+    margin-top: 20px;
+    margin-bottom: 3px;
+    font-size: 23px;
+}
+
+.blog-content h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.blog-content a {
+    text-decoration: none;
+    color: #F85E57;
+}
+
+.blog-content ul {
+    padding-left: 20px;
+}
+
+.blog-content pre {
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    overflow: auto;
+}
+
+.blog-content pre > code {
+    background-color: revert;
+    padding: 0;
+    border-radius: 0;
+}
+
+.blog-content code {
+    background-color: #141414;
+    padding: 3px;
+    border-radius: 4px;
+    color: #A9BCBC;
+}
+
+.blog-footer {
+    background-color: #2A2D28;
+    margin-top: 40px;
+/*    margin-bottom: -40px;*/
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-footer > .container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-footer-top {
+    display: flex;
+}
+
+.blog-footer > .container .profile-pic {
+    filter: grayscale();
+    border-radius: 50%;
+    width: 110px;
+    border: 3px solid #c0c0c0;
+}
+
+.blog-footer > .container .footer-text-container {
+    margin-left: 30px;
+    color: #FFFFFF;
+}
+
+.blog-footer > .container .footer-text-container p {
+    margin-bottom: 6px;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.blog-footer > .container .footer-text-container .name {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.blog-footer > .container .footer-text-container .footer-about {
+    font-size: 16px;
+}
+
+.blog-footer > .container .footer-text-container .footer-text {
+    font-size: calc(var(--main-font-size) - 2px);
+}
+
+.blog-footer > .container .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+/*    width: 40%;*/
+    margin-top: 20px;
+}
+
+.blog-footer > .container .icons a {
+    color: #B7A69B;
+}
+
+.blog-footer > .container .icons span {
+    font-size: 85px;
+}

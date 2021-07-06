@@ -1,0 +1,394 @@
+
+/******************************************************************************/
+/** IMPORTS                                                                   */
+/******************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Screen sizes > 1920 */
+@import url("styles/portfolio.css");
+@import url("styles/about.css");
+@import url("styles/blog.css");
+@import url("styles/contact.css");
+
+/* Screen sizes 1366 */
+@import url("styles/1366.css") (max-width: 1366px);
+
+/* Screen sizes 1080 */
+@import url("styles/1080.css") (max-width: 1080px);
+
+/* Screen sizes 1024 */
+@import url("styles/1024.css") (max-width: 1024px);
+
+/* Screen sizes 812 */
+@import url("styles/812.css") (max-width: 812px);
+
+/* Screen sizes 800 */
+@import url("styles/800.css") (max-width: 800px);
+
+/* Screen sizes 768 */
+@import url("styles/768.css") (max-width: 768px);
+
+/* Screen sizes 736 */
+@import url("styles/736.css") (max-width: 736px);
+
+/* Screen sizes 667 */
+@import url("styles/667.css") (max-width: 667px);
+
+/* Screen sizes 568 */
+@import url("styles/568.css") (max-width: 568px);
+
+/* Screen sizes 414 */
+@import url("styles/414.css") (max-width: 414px);
+
+/* Screen sizes 375 */
+@import url("styles/375.css") (max-width: 375px);
+
+/* Screen sizes 320 */
+@import url("styles/320.css") (max-width: 320px);
+
+/******************************************************************************/
+/** VARIABLES                                                                 */
+/******************************************************************************/
+:root {
+  --main-font-size: 20px;
+  --main-font-weight: 300;
+}
+
+/******************************************************************************/
+/** Forsberg Publish Theme                                                    */
+/******************************************************************************/
+
+/******************************************************************************/
+/** GENERAL RULES                                                             */
+/******************************************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2A2D28;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #F8EFE9;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #F85E57;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+}
+
+hr {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    height: 10px;
+    background-color: #F85E57;
+    border: none;
+}
+
+.section {
+    padding-bottom: 40px;
+}
+
+.section, .page-container {
+    padding-top: 20px;
+}
+
+a.no-underline {
+    text-decoration: none;
+}
+
+/******************************************************************************/
+/** HEADER                                                                    */
+/******************************************************************************/
+
+header {
+    height: 50vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+header .bg:before {
+    background-image: url("/images/swift_bg.png");
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+header .gradient {
+    background-image: linear-gradient(165deg, rgba(248, 94, 87, 1), rgba(248, 94, 87, 0.85), rgba(108, 92, 230, 1));
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+header .logo-container {
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 33%;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+/******************************************************************************/
+/** FOOTER                                                                    */
+/******************************************************************************/
+
+footer {
+    background-color: #403E3C;
+}
+
+footer > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+footer > .container p {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #7C726C;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 2px;
+}
+
+footer > .container a {
+    color: #7C726C;
+}
+
+/******************************************************************************/
+/** SYNTAX COLORING                                                           */
+/******************************************************************************/
+
+pre code {
+    color: #A9BCBC;
+}
+
+.preprocessing {
+    color: #B68A00;
+}
+
+.comment {
+    color: #6B8A94;
+}
+
+.number {
+    color: #DB6F57;
+}
+
+.call {
+    color: #348FE5;
+}
+
+.property {
+    color: #21AB9D;
+}
+
+.keyword {
+    color: #E83B8E;
+}
+
+.dotAccess {
+    color: #92B300;
+}
+
+.type {
+    color: #8281CA;
+}
+
+.string {
+    color: #FA641E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Original Foundation style below */
+
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*body {*/
+/*    background: #fff;*/
+/*    color: #000;*/
+/*    font-family: Helvetica, Arial;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.wrapper {*/
+/*    max-width: 900px;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    padding: 40px;*/
+/*    text-align: left;*/
+/*}*/
+
+/*header .wrapper {*/
+/*    padding-top: 30px;*/
+/*    padding-bottom: 30px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*header a {*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*header .site-name {*/
+/*    font-size: 1.5em;*/
+/*    color: #000;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*nav {*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*nav li {*/
+/*    display: inline-block;*/
+/*    margin: 0 7px;*/
+/*    line-height: 1.5em;*/
+/*}*/
+
+/*nav li a.selected {*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*h2 {*/
+/*    margin: 20px 0;*/
+/*}*/
+
+/*p {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*a {*/
+/*    color: inherit;*/
+/*}*/
+
+/*.description {*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+/*.item-list > li {*/
+/*    display: block;*/
+/*    padding: 20px;*/
+/*    border-radius: 20px;*/
+/*    background-color: #eee;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.item-list > li:last-child {*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*.item-list h1 {*/
+/*    margin-bottom: 15px;*/
+/*    font-size: 1.3em;*/
+/*}*/
+
+/*.item-list p {*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*.tag-list {*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*.tag-list li,*/
+/*.tag {*/
+/*    display: inline-block;*/
+/*    background-color: #000;*/
+/*    color: #ddd;*/
+/*    padding: 4px 6px;*/
+/*    border-radius: 5px;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+/*.tag-list a,*/
+/*.tag a {*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.item-page .tag-list {*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.content {*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+/*.browse-all {*/
+/*    display: block;*/
+/*    margin-bottom: 30px;*/
+/*}*/
+
+/*.all-tags li {*/
+/*    font-size: 1.4em;*/
+/*    margin-right: 10px;*/
+/*    padding: 6px 10px;*/
+/*}*/
+
+/*footer {*/
+/*    color: #8a8a8a;*/
+/*}*/
+
+/*@media (prefers-color-scheme: dark) {*/
+/*/*    body {*/*/
+/*/*        background-color: #222;*/*/
+/*/*    }*/*/
+/**/
+/*    body,*/
+/*    header .site-name {*/
+/*        color: #ddd;*/
+/*    }*/
+/**/
+/*    .item-list > li {*/
+/*        background-color: #333;*/
+/*    }*/
+/*}*/
+
+/*@media(max-width: 600px) {*/
+/*    .wrapper {*/
+/*        padding: 40px 20px;*/
+/*    }*/
+/*}*/
+
+
+
+
+
