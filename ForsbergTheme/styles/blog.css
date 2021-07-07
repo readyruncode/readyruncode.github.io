@@ -3,8 +3,60 @@
 /** BLOG SECTION                                                              */
 /******************************************************************************/
 
-.blog {
-    background-color: #403E3C;
+@media (prefers-color-scheme: dark) {
+    .blog {
+        background-color: #403E3C;
+    }
+    
+    .blog > .container .item .text-box h3 {
+        color: #F8EEE9;
+    }
+    
+    .blog > .container .item .text-box p {
+        color: #F8EEE9;
+    }
+    
+    .blog-footer {
+        background-color: #2A2D28;
+    }
+    
+    .blog-footer > .container .icons a {
+        color: #B7A69B;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .blog {
+        background-color: #FFFFFF;
+    }
+    
+    .page-container.blog {
+        background-color: #F8EEE9;
+    }
+    
+    .blog.section hr {
+        background-color: #F8EEE9;
+    }
+    
+    .blog > .container .item:first-child .text-box .latest-post {
+        color: #C4AE9F;
+    }
+    
+    .blog > .container .item .text-box h3 {
+        color: #F85E57;
+    }
+    
+    .blog > .container .item .text-box p {
+        color: #474443;
+    }
+    
+    .blog-footer {
+        background-color: #F85E57;
+    }
+    
+    .blog-footer > .container .icons a {
+        color: #FFFFFF;
+    }
 }
 
 .blog > .container {
@@ -38,7 +90,6 @@
 }
 
 .blog > .container .item .text-box h3 {
-    color: #F8EEE9;
     text-transform: uppercase;
     margin-left: 30px;
     font-size: 25px;
@@ -46,7 +97,6 @@
 }
 
 .blog > .container .item .text-box p {
-    color: #F8EEE9;
     margin-left: 30px;
     font-weight: 300;
     font-size: 14px;
@@ -148,7 +198,6 @@
 }
 
 .blog-footer {
-    background-color: #2A2D28;
     margin-top: 40px;
 /*    margin-bottom: -40px;*/
     padding: 50px;
@@ -183,7 +232,7 @@
 .blog-footer > .container .footer-text-container p {
     margin-bottom: 6px;
     font-size: 22px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .blog-footer > .container .footer-text-container .name {
@@ -207,10 +256,6 @@
     justify-content: space-evenly;
 /*    width: 40%;*/
     margin-top: 20px;
-}
-
-.blog-footer > .container .icons a {
-    color: #B7A69B;
 }
 
 .blog-footer > .container .icons span {

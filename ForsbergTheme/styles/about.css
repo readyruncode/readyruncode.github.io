@@ -3,8 +3,24 @@
 /** ABOUT ME SECTION                                                          */
 /******************************************************************************/
 
-.me {
-    background-color: #2D2A28;
+@media (prefers-color-scheme: dark) {
+    .me {
+        background-color: #2D2A28;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .me {
+        background-color: #F85E57;
+    }
+    
+    .me h1 {
+        color: #FFFFFF !important;
+    }
+    
+    .me hr {
+        background-color: #FFFFFF !important;
+    }
 }
 
 .me > .container {

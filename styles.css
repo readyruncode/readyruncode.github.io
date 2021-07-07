@@ -49,9 +49,49 @@
 /******************************************************************************/
 /** VARIABLES                                                                 */
 /******************************************************************************/
+
 :root {
-  --main-font-size: 20px;
-  --main-font-weight: 300;
+    color-scheme: light dark;
+    --main-font-size: 20px;
+    --main-font-weight: 400;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2A2D28;
+        color: #F8EEE9;
+    }
+    
+    footer {
+        background-color: #403E3C;
+    }
+    
+    footer > .container p {
+        color: #7C726C;
+    }
+    
+    footer > .container a {
+        color: #7C726C;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #F8EEE9;
+        color: #474443;
+    }
+    
+    footer {
+        background-color: #FFFFFF;
+    }
+    
+    footer > .container p {
+        color: #DBD1CC;
+    }
+    
+    footer > .container a {
+        color: #DBD1CC;
+    }
 }
 
 /******************************************************************************/
@@ -68,9 +108,7 @@
 }
 
 body {
-    background-color: #2A2D28;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #F8EFE9;
 }
 
 h1, h2, h3, h4, h5 {
@@ -154,10 +192,6 @@ header .logo-container {
 /** FOOTER                                                                    */
 /******************************************************************************/
 
-footer {
-    background-color: #403E3C;
-}
-
 footer > .container {
     display: flex;
     flex-direction: column;
@@ -168,14 +202,10 @@ footer > .container {
 footer > .container p {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    color: #7C726C;
+/*    color: #7C726C;*/
     font-size: 14px;
     font-weight: 600;
     margin: 2px;
-}
-
-footer > .container a {
-    color: #7C726C;
 }
 
 /******************************************************************************/

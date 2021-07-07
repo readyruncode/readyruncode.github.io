@@ -3,8 +3,16 @@
 /** CONTACT SECTION                                                           */
 /******************************************************************************/
 
-.contact {
-    background-color: #2D2A28;
+@media (prefers-color-scheme: dark) {
+    .contact {
+        background-color: #2D2A28;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .contact {
+        background-color: #F8EEE9;
+    }
 }
 
 .contact > .container {
