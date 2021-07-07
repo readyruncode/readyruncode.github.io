@@ -34,10 +34,6 @@
         background-color: #F8EEE9;
     }
     
-    .blog.section hr {
-        background-color: #F8EEE9;
-    }
-    
     .blog > .container .item:first-child .text-box .latest-post {
         color: #C4AE9F;
     }
