@@ -54,6 +54,10 @@
         background-color: #F85E57;
     }
     
+    .blog-footer > .container .footer-text-container h4 {
+        color: #FFFFFF;
+    }
+    
     .blog-footer > .container .icons a {
         color: #FFFFFF;
     }
