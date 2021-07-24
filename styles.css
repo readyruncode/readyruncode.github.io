@@ -4,46 +4,35 @@
 /******************************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Screen sizes > 1920 */
 @import url("styles/portfolio.css");
 @import url("styles/about.css");
 @import url("styles/blog.css");
 @import url("styles/contact.css");
 
-/* Screen sizes 1366 */
+@import url("styles/2732.css") (max-width: 2732px);
+@import url("styles/2436.css") (max-width: 2436px);
+@import url("styles/2224.css") (max-width: 2224px);
+@import url("styles/2048.css") (max-width: 2048px);
+@import url("styles/1920.css") (max-width: 1920px);
+@import url("styles/1668.css") (max-width: 1668px);
+@import url("styles/1536.css") (max-width: 1536px);
 @import url("styles/1366.css") (max-width: 1366px);
-
-/* Screen sizes 1080 */
+@import url("styles/1334.css") (max-width: 1334px);
+@import url("styles/1136.css") (max-width: 1136px);
+@import url("styles/1125.css") (max-width: 1125px);
+@import url("styles/1112.css") (max-width: 1112px);
 @import url("styles/1080.css") (max-width: 1080px);
-
-/* Screen sizes 1024 */
 @import url("styles/1024.css") (max-width: 1024px);
-
-/* Screen sizes 812 */
+@import url("styles/834.css") (max-width: 834px);
 @import url("styles/812.css") (max-width: 812px);
-
-/* Screen sizes 800 */
-@import url("styles/800.css") (max-width: 800px);
-
-/* Screen sizes 768 */
 @import url("styles/768.css") (max-width: 768px);
-
-/* Screen sizes 736 */
+@import url("styles/750.css") (max-width: 750px);
 @import url("styles/736.css") (max-width: 736px);
-
-/* Screen sizes 667 */
 @import url("styles/667.css") (max-width: 667px);
-
-/* Screen sizes 568 */
+@import url("styles/640.css") (max-width: 640px);
 @import url("styles/568.css") (max-width: 568px);
-
-/* Screen sizes 414 */
 @import url("styles/414.css") (max-width: 414px);
-
-/* Screen sizes 375 */
 @import url("styles/375.css") (max-width: 375px);
-
-/* Screen sizes 320 */
 @import url("styles/320.css") (max-width: 320px);
 
 /******************************************************************************/
@@ -52,9 +41,37 @@
 
 :root {
     color-scheme: light dark;
-    --main-font-size: 20px;
+    --main-font-size: 40px;
     --main-font-weight: 400;
+    --h1-font-size: calc(var(--main-font-size) * 3.1);
+    --h2-font-size: calc(var(--h1-font-size) * 0.75);
+    --h3-font-size: calc(var(--h1-font-size) * 0.50);
+    --h4-font-size: calc(var(--h1-font-size) * 0.35);
+    --hr-height: 15px;
+    --tab-font-size: calc(var(--h1-font-size) * 0.33);
+    --tab-margin-right: 60px;
+    --portfolio-item-height: 700px;
+    --portfolio-item-h3-font-size: calc(var(--h1-font-size) * 0.50);
+    --portfolio-item-border-radius: 30px;
+    --project-content-h2-font-size: calc(var(--main-font-size) + 2px);
+    --app-badge-height: 70px;
+    --section-padding-bottom: 110px;
+    --profile-pic-width: 20vw;
+    --blog-item-size: 500px;
+    --blog-item-latest-post-font-size: calc(var(--main-font-size) - 7px);
+    --blog-item-title-h3-font-size: calc(var(--main-font-size) + 10px);
+    --blog-item-date-font-size: calc(var(--main-font-size) - 5px);
+    --blog-content-h2-font-size: calc(var(--h1-font-size) - 40px);
+    --blog-content-h3-font-size: calc(var(--blog-content-h2-font-size) - 25px);
+    --blog-content-h4-font-size: calc(var(--blog-content-h3-font-size) - 5px);
+    --blog-footer-profile-pic-width: calc(var(--profile-pic-width) - 150px);
+    --blog-footer-about-font-size: calc(var(--main-font-size) - 6px);
+    --footer-font-size: calc(var(--main-font-size) - 10px);
 }
+
+/******************************************************************************/
+/** DARK MODE                                                                 */
+/******************************************************************************/
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -74,6 +91,10 @@
         color: #7C726C;
     }
 }
+
+/******************************************************************************/
+/** LIGHT MODE                                                                */
+/******************************************************************************/
 
 @media (prefers-color-scheme: light) {
     body {
@@ -119,7 +140,7 @@ h1, h2, h3, h4, h5 {
 h1 {
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 60px;
+    font-size: var(--h1-font-size);
     text-align: center;
     font-weight: 900;
 }
@@ -129,13 +150,13 @@ hr {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    height: 10px;
+    height: var(--hr-height);
     background-color: #F85E57;
     border: none;
 }
 
 .section {
-    padding-bottom: 40px;
+    padding-bottom: var(--section-padding-bottom);
 }
 
 .section, .page-container {
@@ -181,7 +202,7 @@ header .logo-container {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 33%;
+    width: 40%;
 }
 
 .logo-container img {
@@ -196,14 +217,13 @@ footer > .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 70px;
 }
 
 footer > .container p {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-/*    color: #7C726C;*/
-    font-size: 14px;
+    font-size: var(--footer-font-size);
     font-weight: 600;
     margin: 2px;
 }
@@ -251,174 +271,3 @@ pre code {
 .string {
     color: #FA641E;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/** Original Foundation style below */
-
-/** {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*body {*/
-/*    background: #fff;*/
-/*    color: #000;*/
-/*    font-family: Helvetica, Arial;*/
-/*    text-align: center;*/
-/*}*/
-
-/*.wrapper {*/
-/*    max-width: 900px;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*    padding: 40px;*/
-/*    text-align: left;*/
-/*}*/
-
-/*header .wrapper {*/
-/*    padding-top: 30px;*/
-/*    padding-bottom: 30px;*/
-/*    text-align: center;*/
-/*}*/
-
-/*header a {*/
-/*    text-decoration: none;*/
-/*}*/
-
-/*header .site-name {*/
-/*    font-size: 1.5em;*/
-/*    color: #000;*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*nav {*/
-/*    margin-top: 20px;*/
-/*}*/
-
-/*nav li {*/
-/*    display: inline-block;*/
-/*    margin: 0 7px;*/
-/*    line-height: 1.5em;*/
-/*}*/
-
-/*nav li a.selected {*/
-/*    text-decoration: underline;*/
-/*}*/
-
-/*h2 {*/
-/*    margin: 20px 0;*/
-/*}*/
-
-/*p {*/
-/*    margin-bottom: 10px;*/
-/*}*/
-
-/*a {*/
-/*    color: inherit;*/
-/*}*/
-
-/*.description {*/
-/*    margin-bottom: 40px;*/
-/*}*/
-
-/*.item-list > li {*/
-/*    display: block;*/
-/*    padding: 20px;*/
-/*    border-radius: 20px;*/
-/*    background-color: #eee;*/
-/*    margin-bottom: 20px;*/
-/*}*/
-
-/*.item-list > li:last-child {*/
-/*    margin-bottom: 0;*/
-/*}*/
-
-/*.item-list h1 {*/
-/*    margin-bottom: 15px;*/
-/*    font-size: 1.3em;*/
-/*}*/
-
-/*.item-list p {*/
-/*    margin-bottom: 0;*/
-/*}*/
-
-/*.tag-list {*/
-/*    margin-bottom: 15px;*/
-/*}*/
-
-/*.tag-list li,*/
-/*.tag {*/
-/*    display: inline-block;*/
-/*    background-color: #000;*/
-/*    color: #ddd;*/
-/*    padding: 4px 6px;*/
-/*    border-radius: 5px;*/
-/*    margin-right: 5px;*/
-/*}*/
-
-/*.tag-list a,*/
-/*.tag a {*/
-/*    text-decoration: none;*/
-/*}*/
-
-/*.item-page .tag-list {*/
-/*    display: inline-block;*/
-/*}*/
-
-/*.content {*/
-/*    margin-bottom: 40px;*/
-/*}*/
-
-/*.browse-all {*/
-/*    display: block;*/
-/*    margin-bottom: 30px;*/
-/*}*/
-
-/*.all-tags li {*/
-/*    font-size: 1.4em;*/
-/*    margin-right: 10px;*/
-/*    padding: 6px 10px;*/
-/*}*/
-
-/*footer {*/
-/*    color: #8a8a8a;*/
-/*}*/
-
-/*@media (prefers-color-scheme: dark) {*/
-/*/*    body {*/*/
-/*/*        background-color: #222;*/*/
-/*/*    }*/*/
-/**/
-/*    body,*/
-/*    header .site-name {*/
-/*        color: #ddd;*/
-/*    }*/
-/**/
-/*    .item-list > li {*/
-/*        background-color: #333;*/
-/*    }*/
-/*}*/
-
-/*@media(max-width: 600px) {*/
-/*    .wrapper {*/
-/*        padding: 40px 20px;*/
-/*    }*/
-/*}*/
-
-
-
-
-

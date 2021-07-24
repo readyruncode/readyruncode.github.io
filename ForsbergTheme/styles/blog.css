@@ -67,7 +67,7 @@
 }
 
 .blog > .container .item {
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .blog > .container .item .flex-box {
@@ -75,8 +75,8 @@
 }
 
 .blog > .container .item .img-box {
-    min-width: 200px;
-    height: 200px;
+    max-width: 20vw;
+    max-height: 20vw;
 }
 
 .blog > .container .item .img-box img {
@@ -86,20 +86,18 @@
 }
 
 .blog > .container .item .text-box {
-    
+    margin-left: 60px;
 }
 
 .blog > .container .item .text-box h3 {
     text-transform: uppercase;
-    margin-left: 30px;
-    font-size: 25px;
+    font-size: var(--blog-item-title-h3-font-size);
     font-weight: 700;
 }
 
 .blog > .container .item .text-box p {
-    margin-left: 30px;
     font-weight: 300;
-    font-size: 14px;
+    font-size: var(--blog-item-date-font-size);
 }
 
 .blog > .container .item .text-box .latest-post {
@@ -110,7 +108,7 @@
     display: revert;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: var(--blog-item-latest-post-font-size);
     font-weight: 500;
 }
 
@@ -137,7 +135,7 @@
 /******************************************************************************/
 
 .blog-content {
-    width: 50%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.4;
@@ -149,20 +147,20 @@
 }
 
 .blog-content h2 {
-    margin-top: 30px;
-    font-size: 32px;
+    margin-top: 70px;
+    font-size: var(--blog-content-h2-font-size);
     margin-bottom: 6px;
 }
 
 .blog-content h3 {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 3px;
-    font-size: 23px;
+    font-size: var(--blog-content-h3-font-size);
 }
 
 .blog-content h4 {
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: var(--blog-content-h4-font-size);
+    margin-top: 30px;
 }
 
 .blog-content a {
@@ -198,9 +196,8 @@
 }
 
 .blog-footer {
-    margin-top: 40px;
-/*    margin-bottom: -40px;*/
-    padding: 50px;
+    margin-top: 100px;
+    padding: 100px;
     display: flex;
     flex-direction: row;
 }
@@ -220,13 +217,17 @@
 .blog-footer > .container .profile-pic {
     filter: grayscale();
     border-radius: 50%;
-    width: 110px;
+    width: var(--blog-footer-profile-pic-width);
     border: 3px solid #c0c0c0;
 }
 
 .blog-footer > .container .footer-text-container {
     margin-left: 30px;
     color: #FFFFFF;
+}
+
+.blog-footer > .container .footer-text-container h4 {
+    font-size: var(--blog-item-latest-post-font-size)
 }
 
 .blog-footer > .container .footer-text-container p {
@@ -238,12 +239,12 @@
 .blog-footer > .container .footer-text-container .name {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: var(--main-font-size);
     font-weight: 600;
 }
 
 .blog-footer > .container .footer-text-container .footer-about {
-    font-size: 16px;
+    font-size: var(--blog-footer-about-font-size);
 }
 
 .blog-footer > .container .footer-text-container .footer-text {
@@ -254,10 +255,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-/*    width: 40%;*/
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .blog-footer > .container .icons span {
-    font-size: 85px;
+    font-size: 4vw;
 }

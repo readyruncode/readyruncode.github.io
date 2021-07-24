@@ -1,123 +1,183 @@
 
+:root {
+    --main-font-size: 22px !important;
+    --h1-font-size: calc(var(--main-font-size) * 2.7) !important;
+    --portfolio-item-height: 400px !important;
+}
+
 /******************************************************************************/
 /** HEADER                                                                    */
 /******************************************************************************/
 
+header {
+    height: 30vh !important;
+}
+
 header .logo-container {
-    width: 60% !important;
+    width: 80% !important;
 }
 
 /******************************************************************************/
 /** PORTFOLIO SECTION                                                         */
 /******************************************************************************/
 
-.half {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.portfolio-item-flex-container {
-    height: 150px;
-}
-
-.tab-panel > .portfolio-item:first-child img {
-    max-height: 80%;
-}
-
-.portfolio-item-text-box > h3 {
-    margin: 10px 20px 0px 20px;
-    font-size: 16px;
-}
-
-.project-content > .main-image {
-    width: 35%;
-}
-
-.project-content ul:nth-of-type(2) li a img {
-    width: 80%;
-}
-
 /******************************************************************************/
 /** ABOUT ME SECTION                                                          */
 /******************************************************************************/
 
-.me > .container {
-    flex-flow: column;
-}
-
-.me > .container > div:first-child {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.me > .container .text-box {
-    margin-left: 0px;
-}
-
 /******************************************************************************/
 /** BLOG SECTION                                                              */
 /******************************************************************************/
-
-.blog > .container .item .img-box {
-    min-width: 90px;
-    height: 90px;
-}
-
-.blog > .container .item:first-child .text-box .latest-post {
-    font-size: 10px;
-}
-
-.blog > .container .item .text-box h3 {
-    font-size: 16px;
-}
-
-.blog-footer {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.blog-footer > .container {
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.blog-footer > .container .profile-pic {
-    margin-bottom: 15px;
-}
-
-.blog-footer-top {
-    flex-direction: column;
-}
-
-.blog-footer > .container .pic-container {
-    text-align: center;
-}
-
-.blog-footer > .container .footer-text-container {
-     margin-left: 0px;
-}
-
-.blog-footer > .container .icons {
-    width: 100%;
-}
 
 /******************************************************************************/
 /** CONTACT SECTION                                                           */
 /******************************************************************************/
 
 .contact > .container .icons {
-    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contact > .container span {
-    font-size: 11vw;
+    font-size: 24vw;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /******************************************************************************/
 /** FOOTER                                                                    */
 /******************************************************************************/
 
-footer > .container p {
-    font-size: 8px !important;
+footer > .container {
+    text-align: center;
 }
+
+
+
+
+
+
+
+/**/
+/*/******************************************************************************/*/
+/*/** HEADER                                                                    */*/
+/*/******************************************************************************/*/
+/**/
+/*header .logo-container {*/
+/*    width: 60% !important;*/
+/*}*/
+/**/
+/*/******************************************************************************/*/
+/*/** PORTFOLIO SECTION                                                         */*/
+/*/******************************************************************************/*/
+/**/
+/*.half {*/
+/*    width: 100%;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+/**/
+/*.portfolio-item-flex-container {*/
+/*    height: 150px;*/
+/*}*/
+/**/
+/*.tab-panel > .portfolio-item:first-child img {*/
+/*    max-height: 80%;*/
+/*}*/
+/**/
+/*.portfolio-item-text-box > h3 {*/
+/*    margin: 10px 20px 0px 20px;*/
+/*    font-size: 16px;*/
+/*}*/
+/**/
+/*.project-content > .main-image {*/
+/*    width: 35%;*/
+/*}*/
+/**/
+/*.project-content ul:nth-of-type(2) li a img {*/
+/*    width: 80%;*/
+/*}*/
+/**/
+/*/******************************************************************************/*/
+/*/** ABOUT ME SECTION                                                          */*/
+/*/******************************************************************************/*/
+/**/
+/*.me > .container {*/
+/*    flex-flow: column;*/
+/*}*/
+/**/
+/*.me > .container > div:first-child {*/
+/*    text-align: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+/**/
+/*.me > .container .text-box {*/
+/*    margin-left: 0px;*/
+/*}*/
+/**/
+/*/******************************************************************************/*/
+/*/** BLOG SECTION                                                              */*/
+/*/******************************************************************************/*/
+/**/
+/*.blog > .container .item .img-box {*/
+/*    min-width: 90px;*/
+/*    height: 90px;*/
+/*}*/
+/**/
+/*.blog > .container .item:first-child .text-box .latest-post {*/
+/*    font-size: 10px;*/
+/*}*/
+/**/
+/*.blog > .container .item .text-box h3 {*/
+/*    font-size: 16px;*/
+/*}*/
+/**/
+/*.blog-footer {*/
+/*    padding-left: 0;*/
+/*    padding-right: 0;*/
+/*}*/
+/**/
+/*.blog-footer > .container {*/
+/*    width: 90%;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+/**/
+/*.blog-footer > .container .profile-pic {*/
+/*    margin-bottom: 15px;*/
+/*}*/
+/**/
+/*.blog-footer-top {*/
+/*    flex-direction: column;*/
+/*}*/
+/**/
+/*.blog-footer > .container .pic-container {*/
+/*    text-align: center;*/
+/*}*/
+/**/
+/*.blog-footer > .container .footer-text-container {*/
+/*     margin-left: 0px;*/
+/*}*/
+/**/
+/*.blog-footer > .container .icons {*/
+/*    width: 100%;*/
+/*}*/
+/**/
+/*/******************************************************************************/*/
+/*/** CONTACT SECTION                                                           */*/
+/*/******************************************************************************/*/
+/**/
+/*.contact > .container .icons {*/
+/*    width: 80%;*/
+/*}*/
+/**/
+/*.contact > .container span {*/
+/*    font-size: 11vw;*/
+/*}*/
+/**/
+/*/******************************************************************************/*/
+/*/** FOOTER                                                                    */*/
+/*/******************************************************************************/*/
+/**/
+/*footer > .container p {*/
+/*    font-size: 8px !important;*/
+/*}*/

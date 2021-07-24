@@ -34,11 +34,11 @@
 .me > .container .profile-pic {
     filter: grayscale();
     border-radius: 50%;
-    width: 200px;
+    width: var(--profile-pic-width);
 }
 
 .me > .container .text-box {
-    margin-left: 30px;
+    margin-left: 60px;
     color: #FFFFFF;
 }
 

@@ -31,8 +31,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 40%;
-    margin-top: 20px;
+    width: 70%;
+    margin-top: 40px;
 }
 
 .contact > .container .icons a {
@@ -40,6 +40,5 @@
 }
 
 .contact > .container span {
-/*    font-size: 60px;*/
-    font-size: 4vw;
+    font-size: 7vw;
 }
