@@ -41,32 +41,33 @@
 
 :root {
     color-scheme: light dark;
-    --main-font-size: 40px;
+    --main-font-size: 22px;
     --main-font-weight: 400;
     --h1-font-size: calc(var(--main-font-size) * 3.1);
     --h2-font-size: calc(var(--h1-font-size) * 0.75);
     --h3-font-size: calc(var(--h1-font-size) * 0.50);
     --h4-font-size: calc(var(--h1-font-size) * 0.35);
-    --hr-height: 15px;
+    --hr-height: 10px;
     --tab-font-size: calc(var(--h1-font-size) * 0.33);
-    --tab-margin-right: 60px;
-    --portfolio-item-height: 700px;
-    --portfolio-item-h3-font-size: calc(var(--h1-font-size) * 0.50);
+    --tab-margin-right: 35px;
+    --portfolio-item-height: 450px;
+/*    --portfolio-item-h3-font-size: calc(var(--h1-font-size) * 0.50);*/
     --portfolio-item-border-radius: 30px;
-    --project-content-h2-font-size: calc(var(--main-font-size) + 2px);
+/*    --project-content-h2-font-size: calc(var(--main-font-size) + 2px);*/
     --app-badge-height: 70px;
     --section-padding-bottom: 110px;
-    --profile-pic-width: 20vw;
+/*    --profile-pic-width: 10vw;*/
+    --pic-width: 10vw;
     --blog-item-size: 500px;
     --blog-item-latest-post-font-size: calc(var(--main-font-size) - 7px);
-    --blog-item-title-h3-font-size: calc(var(--main-font-size) + 10px);
+/*    --blog-item-title-h3-font-size: calc(var(--main-font-size) + 10px);*/
     --blog-item-date-font-size: calc(var(--main-font-size) - 5px);
-    --blog-content-h2-font-size: calc(var(--h1-font-size) - 40px);
-    --blog-content-h3-font-size: calc(var(--blog-content-h2-font-size) - 25px);
-    --blog-content-h4-font-size: calc(var(--blog-content-h3-font-size) - 5px);
+/*    --blog-content-h2-font-size: calc(var(--h1-font-size) - 40px);*/
+/*    --blog-content-h3-font-size: calc(var(--blog-content-h2-font-size) - 25px);*/
+/*    --blog-content-h4-font-size: calc(var(--blog-content-h3-font-size) - 5px);*/
     --blog-footer-profile-pic-width: calc(var(--profile-pic-width) - 150px);
     --blog-footer-about-font-size: calc(var(--main-font-size) - 6px);
-    --footer-font-size: calc(var(--main-font-size) - 10px);
+    --footer-font-size: calc(var(--main-font-size) - 8px);
 }
 
 /******************************************************************************/
@@ -202,7 +203,7 @@ header .logo-container {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: 30%;
 }
 
 .logo-container img {
@@ -217,7 +218,7 @@ footer > .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px;
+    padding: 30px;
 }
 
 footer > .container p {

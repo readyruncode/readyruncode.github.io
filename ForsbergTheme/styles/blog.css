@@ -67,7 +67,7 @@
 }
 
 .blog > .container .item {
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .blog > .container .item .flex-box {
@@ -75,8 +75,8 @@
 }
 
 .blog > .container .item .img-box {
-    max-width: 20vw;
-    max-height: 20vw;
+    max-width: var(--pic-width);
+    max-height: var(--pic-width);
 }
 
 .blog > .container .item .img-box img {
@@ -91,7 +91,7 @@
 
 .blog > .container .item .text-box h3 {
     text-transform: uppercase;
-    font-size: var(--blog-item-title-h3-font-size);
+    font-size: var(--h3-font-size);
     font-weight: 700;
 }
 
@@ -148,18 +148,18 @@
 
 .blog-content h2 {
     margin-top: 70px;
-    font-size: var(--blog-content-h2-font-size);
+    font-size: var(--h2-font-size);
     margin-bottom: 6px;
 }
 
 .blog-content h3 {
     margin-top: 50px;
     margin-bottom: 3px;
-    font-size: var(--blog-content-h3-font-size);
+    font-size: var(--h3-font-size);
 }
 
 .blog-content h4 {
-    font-size: var(--blog-content-h4-font-size);
+    font-size: var(--h4-font-size);
     margin-top: 30px;
 }
 

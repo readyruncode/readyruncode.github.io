@@ -26,7 +26,7 @@
 .me > .container {
     display: flex;
     justify-content: center;
-    max-width: 70%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -34,7 +34,7 @@
 .me > .container .profile-pic {
     filter: grayscale();
     border-radius: 50%;
-    width: var(--profile-pic-width);
+    width: var(--pic-width);
 }
 
 .me > .container .text-box {
