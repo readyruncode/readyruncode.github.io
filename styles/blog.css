@@ -8,10 +8,6 @@
         background-color: #403E3C;
     }
     
-    .blog > .container .item .text-box h3 {
-        color: #F8EEE9;
-    }
-    
     .blog > .container .item .text-box p {
         color: #F8EEE9;
     }
@@ -38,9 +34,9 @@
         color: #C4AE9F;
     }
     
-    .blog > .container .item .text-box h3 {
-        color: #F85E57;
-    }
+/*    .blog > .container .item .text-box h3 {*/
+/*        color: #F85E57;*/
+/*    }*/
     
     .blog > .container .item .text-box p {
         color: #474443;
