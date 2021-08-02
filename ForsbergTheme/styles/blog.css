@@ -34,10 +34,6 @@
         color: #C4AE9F;
     }
     
-/*    .blog > .container .item .text-box h3 {*/
-/*        color: #F85E57;*/
-/*    }*/
-    
     .blog > .container .item .text-box p {
         color: #474443;
     }
@@ -70,14 +66,8 @@
     display: flex;
 }
 
-.blog > .container .item .img-box {
-/*    max-width: var(--pic-width);*/
-/*    max-height: var(--pic-width);*/
-}
-
 .blog > .container .item .img-box img {
     width: var(--pic-width  );
-/*    max-height: 100%;*/
     border-radius: 15px;
 }
 
