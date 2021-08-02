@@ -80,7 +80,7 @@
 }
 
 .blog > .container .item .img-box img {
-    width: var(--pic-width);
+    width: var(--pic-width  );
 /*    max-height: 100%;*/
     border-radius: 15px;
 }
@@ -259,5 +259,5 @@
 }
 
 .blog-footer > .container .icons span {
-    font-size: 4vw;
+    font-size: 5vw;
 }

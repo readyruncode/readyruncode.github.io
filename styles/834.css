@@ -19,6 +19,10 @@
     display: none;
 }
 
+.project-content {
+    width: 70%;
+}
+
 /******************************************************************************/
 /** ABOUT ME SECTION                                                          */
 /******************************************************************************/
@@ -62,6 +66,18 @@
 
 .blog > .container .item .text-box {
     margin-left: 0px;
+}
+
+.blog-content {
+    width: 90%;
+}
+
+.blog-footer > .container {
+    width: 100%;
+}
+
+.blog-footer > .container .icons span {
+    font-size: 10vw;
 }
 
 /******************************************************************************/

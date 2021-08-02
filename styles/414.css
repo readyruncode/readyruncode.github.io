@@ -30,6 +30,19 @@ header .logo-container {
 /** BLOG SECTION                                                              */
 /******************************************************************************/
 
+.blog-footer {
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.blog-footer > .container .icons span {
+    font-size: 12vw;
+}
+
+.blog-footer > .container .icons {
+    margin-top: 25px;
+}
+
 /******************************************************************************/
 /** CONTACT SECTION                                                           */
 /******************************************************************************/

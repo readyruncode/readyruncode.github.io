@@ -54,7 +54,7 @@
 /*    --portfolio-item-h3-font-size: calc(var(--h1-font-size) * 0.50);*/
     --portfolio-item-border-radius: 30px;
 /*    --project-content-h2-font-size: calc(var(--main-font-size) + 2px);*/
-    --app-badge-height: 70px;
+    --app-badge-height: 50px;
     --section-padding-bottom: 110px;
 /*    --profile-pic-width: 10vw;*/
     --pic-width: 10vw;
@@ -65,7 +65,7 @@
 /*    --blog-content-h2-font-size: calc(var(--h1-font-size) - 40px);*/
 /*    --blog-content-h3-font-size: calc(var(--blog-content-h2-font-size) - 25px);*/
 /*    --blog-content-h4-font-size: calc(var(--blog-content-h3-font-size) - 5px);*/
-    --blog-footer-profile-pic-width: calc(var(--profile-pic-width) - 150px);
+    --blog-footer-profile-pic-width: calc(var(--pic-width) - 3vw);
     --blog-footer-about-font-size: calc(var(--main-font-size) - 6px);
     --footer-font-size: calc(var(--main-font-size) - 8px);
 }

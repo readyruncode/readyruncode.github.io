@@ -32,6 +32,14 @@ header .logo-container {
     max-width: 80%;
 }
 
+.blog-footer {
+    padding: 60px;
+}
+
+.blog-footer > .container .icons span {
+    font-size: 7vw;
+}
+
 /******************************************************************************/
 /** CONTACT SECTION                                                           */
 /******************************************************************************/
