@@ -32,6 +32,9 @@ body {
     color: #D1F7FF;
     font-family: Helvetica, Arial;
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper {
@@ -229,6 +232,7 @@ footer {
     background-color: #101010;
     padding: 40px;
     color: #3B3B3B;
+    margin-top: auto;
 }
 
 footer .contact-icons {
