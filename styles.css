@@ -269,6 +269,7 @@ footer .contact-icons {
 
 .about p {
     margin-top: 12px;
+    line-height: 24px;
 }
 
 .profile-image {
@@ -313,7 +314,6 @@ footer .contact-icons {
 
 .single-post blockquote p {
     margin: 0;
-
 }
 
 .single-post blockquote p .right-span {
@@ -339,8 +339,9 @@ footer .contact-icons {
 
 .single-post img {
     max-width: 100%;
-    margin: 25px 0px 25px 0px;
+    margin: 25px auto 25px auto;
     border-radius: 6px;
+    display: block;
 }
 
 /** Splash Syntax Highlighting */
